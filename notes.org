@@ -1,0 +1,3 @@
+* Notes
+React creates a virtual DOM. The actual DOM loads slowly but the virtual DOM loads quickly since it is written in JS, which is very fast
+When it does rerender something in the actual DOM, it only reloads what is different between the new virtual DOM and the actual DOM
