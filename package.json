@@ -5,7 +5,7 @@
   "main": "index.jsx",
   "scripts": {
     "start": "npm run build",
-    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --history-api-fallback ",
     "build:prod": "webpack -p && cp src/index.html dist/index.html "
   },
   "keywords": [
@@ -15,7 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-router": "^4.2.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -25,5 +26,13 @@
     "babel-preset-stage-2": "^6.24.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkshumway/ReactBasics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wkshumway/ReactBasics/issues"
+  },
+  "homepage": "https://github.com/wkshumway/ReactBasics#readme"
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router";
 
 export class Header extends React.Component {
     render() {
@@ -7,7 +8,8 @@ export class Header extends React.Component {
                 <div className="container">
                     <div className="navbar-header">
                         <ul className="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
+                            <li><Link to={"/home"}>Home</Link></li>
+                            <li><Link to={"/user"}>User</Link></li>
                         </ul>
                     </div>
                 </div>
